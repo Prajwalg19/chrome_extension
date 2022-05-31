@@ -1,0 +1,37 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(/home/nova/Downloads/green.jpg) ;
+    background-size:auto;
+    text-align: center;
+    color :white;
+    font-weight: bold;
+    
+    
+}
+
+
+h1{
+    color : yellow;
+    font-style: italic;
+
+}
+#button{
+    color : #016f32;
+    width: 150px;
+    background : goldenrod;
+    font-weight: bold;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 2px;
+}
+
+.button2 {
+    color :#016f32;
+    background : goldenrod;
+    border : none;
+    border-radius: 2px;
+    font-weight: bold;
+    margin-top : 4px;
+    padding : 5px 5px;
+    width : 150px;
+}
