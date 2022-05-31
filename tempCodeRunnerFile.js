@@ -1,3 +1,3 @@
-var a;
-var b = a.POSITIVE_INFINITY;
-console.log(b);
+for(let i = 0 ; i< arr.length ;1++ ){
+    
+	}

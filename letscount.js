@@ -1,16 +1,13 @@
-getRandomCard = () => {
-	return Math.floor(Math.random() * 10);
-};
-let firstCard = getRandomCard();
-let secondCard = getRandomCard();
-sum = firstCard + secondCard;
-arr = [firstCard, secondCard];
 let answer;
 let card;
 ya = document.getElementById("Cards");
 yo = document.getElementById("Sum");
 les = document.getElementById("result");
 start_game = () => {
+	let firstCard = getRandomCard();
+	let secondCard = getRandomCard();
+	sum = firstCard + secondCard;
+	arr = [firstCard, secondCard];
 	render_game();
 };
 
@@ -35,3 +32,14 @@ function newcard() {
 	sum += card;
 	render_game();
 }
+
+function getRandomCard () {
+	let variable; 
+	variable =  Math.floor(Math.random() * 13);
+	 if(variable === 1)
+	 return 11;
+	 else if(variable >= 10)
+	 return 10;
+	 else 
+	 return variable;
+};
