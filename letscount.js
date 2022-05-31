@@ -1,5 +1,6 @@
 let answer;
 let card;
+let isAlive = false;
 ya = document.getElementById("Cards");
 yo = document.getElementById("Sum");
 les = document.getElementById("result");
@@ -8,6 +9,7 @@ start_game = () => {
 	let secondCard = getRandomCard();
 	sum = firstCard + secondCard;
 	arr = [firstCard, secondCard];
+	isAlive =true;
 	render_game();
 };
 
@@ -26,6 +28,8 @@ render_game = () => {
 	}
 };
 function newcard() {
+	if(isAlive === false || sum>= 21)
+	return;
 	document.querySelector(".card_drawn").innerHTML = "Drawing a new card";
 	card = getRandomCard();
 	arr.push(card);
