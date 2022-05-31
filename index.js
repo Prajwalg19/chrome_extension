@@ -1,34 +1,23 @@
-var value , nam ;
-var object = [
-	{
-		name: "prajwal",
-		class: "engineering",
-		place: "bengaluru",
-	},
-	{
-		name: "gunda",
-		class: "snq",
-		place: "ullal",
-		CGPA: 9,
-	},
-	{
-		name: "vedu",
-		class: "IS",
-		place: "GAT",
-		CGPA: 10,
-	},
-];
+let count = 0;
+var recount;
+increment = () => {
+    document.getElementById("count").innerHTML =++ count;
+    recount = count;
+    return count
 
-function get(nam, value) {{
-	
-	for (var i = 0; i < object.length; i++) {
-		if (object[i].name === nam) {
-			return object[i][value] || "no such value found";
-		}
-		
-		}
-		return "no matching data found"
+};
+// restart = () => {
+//     document.getElementById('count').innerHTML = 0;
+//     return count= 0;
+// }
+save = () => {
+    let variable = document.getElementById("pe");
+    variable.textContent+= recount + ' - ';
+    return count = 0;
 
-	}
+
+
+
+
 }
-console.log(get("prajwal", "place"));
+
